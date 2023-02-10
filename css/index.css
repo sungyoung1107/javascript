@@ -1,0 +1,539 @@
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Lobster&display=swap");
+* {
+  margin: 0; /* 마진 리셋 */
+  padding: 0; /* 패딩 리셋 */
+  box-sizing: over-box; /* 테두리 기준으로 사이즈를 정한다 */
+  font-family: "Do Hyeon", sans-serif;
+  text-decoration-line: none;
+}
+
+a {
+  color: inherit; /* 링크의 색상 제거 */
+}
+
+/********************/
+/***** 구조잡기 *****/
+/********************/
+
+.container {
+  background-color: #fcfcfc;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row; /* 전체 컨테이너는 가로로 */
+  justify-content: space-between;
+}
+
+.nav {
+  /* background-color: pink; */
+  /* width: 20%; */
+  /* height: 100vh; */
+  width: 300px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 10px;
+  border: 1px solid rgb(191, 196, 196);
+  border-radius: 20px;
+}
+
+.section {
+  /* background-color: bisque; */
+  /* width: 40%; */
+  width: 600px;
+  height: 100%;
+}
+
+.aside {
+  /* width: 30%; */
+  width: 400px;
+  height: 800px;
+}
+
+/************************/
+/* 세로 네비게이션 로고 */
+/************************/
+.logo {
+  display: flex;
+  flex-direction: row; /* 로고와 로고명을 가로로 */
+  flex-wrap: nowrap; /* 한번에 들어오게 */
+  justify-content: flex-start;
+}
+
+/* 로고 이미지 */
+.logoIcon {
+  width: 50px;
+  height: 50px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+/* 로고 : 인스타그램 */
+/* span을 블럭화를 시켜야 left/right 뿐만 아니라, top/bottom 마진 조정 가능 */
+.insta > a > span {
+  display: inline-block; /* 블럭화 */
+  margin-top: 25px;
+  margin-left: 10px;
+  font-size: 40px;
+  font-family: "Lobster", "Do Hyeon", sans-serf;
+}
+
+.leftMenu {
+  /* background-color: rgba(251, 246, 246, 0.905); */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* margin-top: 20pt; */
+  /* margin-left: 30px; */
+}
+
+/* .leftTopMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+} */
+
+.leftTopMenu > ul > li {
+  /* background-color: palegreen; */
+  width: 100%;
+  list-style: none; /* 리스트 앞 스타일은 없음 */
+  line-height: 75px; /* 리스트 간격 조정 */
+  font-size: 15pt;
+  text-decoration: none;
+  color: black;
+}
+
+/* .leftBottomMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+} */
+
+.leftTopMenuList {
+  /* background-color: rgb(253, 254, 255);
+  border: 1px solid rgb(253, 255, 255); */
+  width: 100%;
+  list-style: none; /* 리스트 앞 스타일은 없음 */
+  line-height: 60px; /* 리스트 간격 조정 */
+  font-size: 15pt;
+  text-decoration: none;
+  color: black;
+}
+
+.leftBottomMenuList {
+  position: relative; /* 서브 메뉴를 absolute로 하기 위해, 이 부분을 relative로 */
+}
+
+/* 더보기에 마우스 올리면 서브 메뉴 나옴 */
+/* .leftBottomMenuList > a:hover 이건 안먹는다 */
+.leftBottomMenuList:hover > ul {
+  display: block; /* 메인 메뉴 항목 위로 오버하면 서브 메뉴 표시 */
+  z-index: 10; /* 슬라이드 쇼에 가리지 않게 조절 */
+}
+
+/* 서브 메뉴 스타일 */
+.leftBottomMenuList > .moreList {
+  display: none; /* 서브 메뉴 처음에는 화면에 안 보이게 */
+  position: absolute; /* 서브 메뉴 포지셔닝 */
+  margin-left: 30px;
+  width: 150px;
+  height: 33px;
+  background-color: #e5e5e4;
+  border: 1px solid rgb(247, 245, 245);
+  border-radius: 10px;
+  list-style: none;
+}
+
+#desc {
+  display: none; /* 처음에는 안보이게 */
+  width: 300px;
+  height: 160px;
+  border: 1px solid darkgrey;
+  background-color: #e5e5e4;
+  border-radius: 5px;
+  position: fixed;
+  margin: 110px 150px;
+}
+
+.modeColor {
+  margin-left: 70px;
+}
+
+.set_close {
+  float: right;
+  margin-top: 0px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid darkgrey;
+  width: 50px;
+  height: 30px;
+}
+
+/* 링크 데코 */
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  color: #e79f34 !important;
+}
+a:active {
+  text-decoration: none;
+}
+
+/* 네비게이션 아이콘 */
+.navIcon {
+  width: 25px;
+  height: 25px;
+}
+
+/************************/
+/***** 가운데 내용 ******/
+/************************/
+
+/**** 가운데 윗 정보 ****/
+.section {
+  display: flex; /* section을 Flex Container로 만든다. */
+  flex-direction: column; /* 구역은 세로로 */
+  flex-wrap: nowrap; /* 딱맞게 */
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.content1 {
+  /* background-color: blue; */
+  display: flex; /* content1 Flex Container로 만든다. */
+  flex-wrap: nowrap;
+  flex-direction: row; /* 사진들은 가로로 */
+  justify-content: space-evenly; /* 팔로워 간격은 동일하게 */
+  border: 1px solid rgb(191, 196, 196);
+  border-radius: 20px;
+  background-color: rgba(255, 251, 251, 0.99);
+  margin-bottom: 20px;
+}
+
+.item {
+  /* background-color: yellow; */
+  display: flex; /* item Flex Container로 만든다. */
+  flex-direction: column;
+  align-items: center; /* 안에 사진들은 중간에 */
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+/* 팔로워 사진 스타일 지정 */
+.followerIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%; /* 테두리 둥글게. border-radius: 150px로 해도 됨 */
+  border: 2px solid transparent; /* 테두리 스타일 */
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  background-image: linear-gradient(#f6f6f6, #f6f6f6),
+    linear-gradient(to right, #ffe100, #f47d06e0, #740259);
+  /* background-size: cover; */
+}
+
+/**** 가운데 아래 정보 ****/
+.content2 {
+  /* background-color: rgb(235, 24, 5); */
+  display: flex; /* content2 Flex Container로 만든다. */
+  flex-direction: column;
+  border: 1px solid rgb(191, 196, 196);
+  border-radius: 20px;
+  justify-content: space-between;
+}
+
+.userId {
+  display: flex; /* userId 공간을 Flex Container로 만든다. */
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.userId1 {
+  display: flex; /* userId1 공간을 Flex Container로 만든다. */
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.userId2 {
+  display: flex; /* userId2 공간을 Flex Container로 만든다. */
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.followerSelectIcon {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%; /* 테두리 둥글게. border-radius: 150px로 해도 됨 */
+  background-size: cover;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.userId1 > span {
+  text-align: center;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+/* 더보기 아이콘 */
+.moreIcon {
+  width: 30px;
+  height: 30px;
+  margin-top: 7px;
+  margin-right: 10px;
+}
+
+/* 마지막만 오른쪽 정렬 */
+.userId1 > img:last-child {
+  margin-left: auto;
+}
+
+.userPicture1 {
+  overflow: hidden; /* 영역 넘치면 감춤 */
+}
+
+#image {
+  display: flex;
+  justify-content: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+#image > img {
+  width: 100%;
+  height: 600px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* 슬라이스쇼 버튼 디자인 */
+.arrowButton {
+  width: 25px;
+  height: 25px;
+  top: 0;
+  border-radius: 50%; /* 동그라미 테두리 */
+  padding: 5px;
+  background-color: transparent; /* 투명 배경 */
+  color: #000; /* 화살표 색은 검정 */
+  font-weight: 800; /* 굵게 */
+  font-size: 10px; /* 화살표 크기 */
+  opacity: 0.5; /* 반투명 */
+}
+
+#prev {
+  left: 0; /* 왼쪽으로 붙여서 */
+}
+
+#next {
+  right: 0; /* 오른쪽으로 붙여서 */
+}
+
+.arrowButton:hover {
+  background-color: #222; /* 짙은 회색 배경 */
+  color: #fff; /* 흰색 화살표 */
+  opacity: 0.6; /* 불투명도를 조금 높임 */
+  cursor: pointer; /* 커서 모양을 포인터로 */
+}
+
+.arrowButton:focus {
+  outline: 0; /* 아웃트라인 없앰 */
+}
+
+.good {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.good1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+
+/* 스크랩 아이콘 뒤로 */
+.good2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+
+.userIcon {
+  width: 25px;
+  height: 25px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.content2 > .goodCounts > span {
+  margin-left: 10px;
+}
+
+.content2 > .userWrightings > span {
+  margin-left: 10px;
+}
+
+.content2 > .comment > span {
+  margin-left: 10px;
+}
+
+/* 댓글창 */
+.commentsBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+}
+
+.commentsBox1 > a > img {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.commentsBox1 > textarea {
+  width: 500px;
+  height: 20px;
+  border-radius: 10px;
+  border: 1px solid rgb(191, 196, 196);
+  margin-top: 5px;
+}
+
+.submitComment {
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: white;
+  color: rgb(55, 55, 229);
+  margin-top: 5px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.submitComment:hover {
+  color: #e79f34 !important;
+}
+
+/**********************/
+/***** 오른쪽 내용 ****/
+/**********************/
+
+.aside {
+  display: flex; /* aside를 Flex Container로 만든다. */
+  flex-direction: column; /* 정보들은 세로로 */
+  justify-content: flex-start;
+}
+
+.myAnotherId {
+  display: flex; /* aside를 Flex Container로 만든다. */
+  flex-direction: row; /* 나의 또다른 계정은 가로로 */
+  justify-content: space-between;
+  margin-top: 10px;
+  border: 1px solid rgb(191, 196, 196);
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.myAnotherId1 {
+  display: flex; /* aside를 Flex Container로 만든다. */
+  flex-direction: row; /* 나의 또다른 계정은 가로로 */
+  justify-content: flex-start;
+  padding: 5px;
+}
+
+.myAnotherIdIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 2px solid transparent; /* 테두리 스타일 */
+  background-size: cover;
+}
+
+.myAnotherId2 {
+  display: flex; /* aside를 Flex Container로 만든다. */
+  flex-direction: column; /* 아이디와 이름은 세로로 */
+  justify-content: center;
+}
+
+.myAnotherId3 {
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.follow {
+  cursor: pointer;
+  color: rgb(55, 55, 229);
+  text-align: center;
+}
+
+.recommend {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: rgb(242, 245, 245);
+  border: 1px solid rgb(231, 235, 235);
+}
+
+/* span 속성을 블럭화하여 마진 위아래를 준다 */
+.recom {
+  display: inline-block;
+  color: rgb(78, 76, 76);
+  font-size: 17px;
+  margin-top: 3px;
+  padding: 1px;
+}
+
+.glasses {
+  width: 15px;
+  height: 15px;
+}
+
+.recommend > .recommend2 > a > span {
+  cursor: pointer;
+}
+
+.recommendIdIcon {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 2px solid transparent; /* 테두리 스타일 */
+  background-size: cover;
+  padding: 5px;
+}
+
+/* 마지막 파트 */
+.foot {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 600px;
+  height: 150px;
+}
+
+.foot > .foot1 > span {
+  color: rgb(191, 196, 196);
+}
+
+.foot > .foot2 > span {
+  color: rgb(191, 196, 196);
+}
+
+/*
+.setting:hover {
+  transform: scale(1.2); /* 마우스 올렸을 때 크게 */
+/* cursor: pointer;  */
+/* 커서 모양을 포인터로 */
+/* }  */

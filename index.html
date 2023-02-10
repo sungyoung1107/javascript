@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <!--ddd-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>instagram</title>
+    <link rel="stylesheet" href="css/index.css?ver=1" />
+  </head>
+  <body>
+    <div class="container">
+      <!--전체 컨테이너-->
+      <nav class="nav">
+        <!--왼쪽 : 세로 네비게이션 로고-->
+        <div class="logo">
+          <!--인스타그램 로고 파트-->
+          <div>
+            <a href="index.html"
+              ><img class="logoIcon" src="img/instagramButton.png" alt="로고"
+            /></a>
+          </div>
+          <div class="insta">
+            <a href="index.html"><span>Instagram</span></a>
+          </div>
+        </div>
+        <div class="leftMenu">
+          <!--메뉴바 전체 파트-->
+          <div class="leftTopMenu">
+            <!--메뉴바 상단 파트-->
+            <ul>
+              <li class="leftTopMenuList">
+                <img class="navIcon" src="img/homeButton.png" />
+                <a href="index.html"
+                  ><span style="margin-left: 10px">홈</span></a
+                >
+              </li>
+              <li class="leftTopMenuList">
+                <img class="navIcon" src="img/searchButton.png" />
+                <a href="instagramSearch.html"
+                  ><span style="margin-left: 10px">검색</span></a
+                >
+              </li>
+              <li class="leftTopMenuList">
+                <img class="navIcon" src="img/tabButton.png" />
+                <a href="instagramTab.html"
+                  ><span style="margin-left: 10px">탐색탭</span></a
+                >
+              </li>
+              <li class="leftTopMenuList">
+                <img class="navIcon" src="img/reelsButton.png" />
+                <a href="instagramReels.html"
+                  ><span style="margin-left: 10px">릴스</span></a
+                >
+              </li>
+              <li class="leftTopMenuList">
+                <img class="navIcon" src="img/messageButton.png" />
+                <a href="instagramMessage.html"
+                  ><span style="margin-left: 10px">메세지</span></a
+                >
+              </li>
+              <li class="leftTopMenuList">
+                <img class="navIcon" src="img/alarmButton.png" />
+                <a href="instagramAlarm.html"
+                  ><span style="margin-left: 10px">알림</span></a
+                >
+              </li>
+              <li class="leftTopMenuList">
+                <img class="navIcon" src="img/madeButton.png" />
+                <a href="instagramMade.html"
+                  ><span style="margin-left: 10px">만들기</span></a
+                >
+              </li>
+              <li class="leftTopMenuList">
+                <img
+                  class="navIcon"
+                  src="img/img1.jpg"
+                  style="
+                    border-radius: 100%;
+                    border: 1px solid rgb(191, 196, 196);
+                  "
+                />
+                <a href="instagramProfile.html"
+                  ><span style="margin-left: 10px">프로필</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="leftBottomMenu">
+            <!--메뉴바 하단 파트-->
+            <ul>
+              <li class="leftBottomMenuList">
+                <img class="navIcon" src="img/moreMenuButton.png" />
+                <a href="">
+                  <span style="font-size: 20px; margin-left: 10px">
+                    더보기</span
+                  >
+                </a>
+                <ul class="moreList">
+                  <li>
+                    <img
+                      class="navIcon"
+                      src="img/setting.png"
+                      alt="설정"
+                      style="margin-top: 3px"
+                    />
+                    <a href="#desc" class="set_open">
+                      <span style="font-size: 18px"> 환경설정</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="section">
+        <!--중간 : 가운데 내용-->
+        <div class="content1">
+          <!--팔로워 정보-->
+          <div class="item">
+            <a href=""><img class="followerIcon" src="img/mung.png" /></a>
+            <span>beauty1</span>
+          </div>
+          <div class="item">
+            <a href=""><img class="followerIcon" src="img/mung2.jpg" /></a>
+            <span>esy1107</span>
+          </div>
+          <div class="item">
+            <a href=""><img class="followerIcon" src="img/img1.jpg" /></a>
+            <span>ssungddu</span>
+          </div>
+          <div class="item">
+            <a href=""><img class="followerIcon" src="img/img2.jpg" /></a>
+            <span>love_sy</span>
+          </div>
+          <div class="item">
+            <a href=""><img class="followerIcon" src="img/mung3.jpg" /></a>
+            <span>aloha123</span>
+          </div>
+          <div class="item">
+            <a href=""><img class="followerIcon" src="img/haneul.jpg" /></a>
+            <span>qwerty</span>
+          </div>
+          <div class="item">
+            <button class="arrowButton">&rang;</button>
+          </div>
+        </div>
+        <div class="content2">
+          <div class="userId">
+            <div class="userId1">
+              <img class="followerSelectIcon" src="img/img1.jpg" />
+              <span>ssungddu</span>
+            </div>
+            <div class="userId2">
+              <a href=""><img class="moreIcon" src="img/moreButton.png" /></a>
+            </div>
+          </div>
+          <div class="userPicture1">
+            <!--환경설정 미니 화면-->
+            <div id="desc">
+              <p style="text-align: center; font-size: 20px">모드 설정</p>
+              <br />
+              <div class="modeColor">
+                <label style="font-size: 18px">
+                  <input
+                    type="radio"
+                    name="set"
+                    value="white"
+                    class="white"
+                    checked="checked"
+                  />화이트모드</label
+                >
+                <label style="font-size: 18px"
+                  ><input
+                    type="radio"
+                    name="set"
+                    value="dark"
+                    class="dark"
+                  />다크모드</label
+                >
+              </div>
+              <br /><br />
+              <div>
+                <button class="set_close" type="button">닫기</button>
+              </div>
+            </div>
+            <div id="image">
+              <button class="arrowButton" id="prev">&lang;</button>
+              <img src="img/img1.jpg" />
+              <!--사진슬라이드-->
+              <img src="img/img3.jpg" />
+              <img src="img/img4.jpg" />
+              <img src="img/img5.jpg" />
+              <button class="arrowButton" id="next">&rang;</button>
+            </div>
+          </div>
+          <div class="good">
+            <div class="good1">
+              <a
+                ><img class="userIcon" id="love" src="img/alarmButton.png"
+              /></a>
+              <a href=""
+                ><img class="userIcon" src="img/commentButton.png"
+              /></a>
+              <a href=""
+                ><img class="userIcon" src="img/messageButton.png"
+              /></a>
+            </div>
+            <div class="good2">
+              <a href=""><img class="userIcon" src="img/scrabButton.png" /></a>
+            </div>
+          </div>
+          <div class="goodCounts">
+            <span>좋아요</span><span>100</span><span>개</span>
+          </div>
+          <div class="userWrightings">
+            <span>ssungddu</span><span>"선셋 촬영, 멋진 노을과"</span>
+            <a
+              href=""
+              style="color: rgb(78, 76, 76); font-size: 15px; margin-left: 3px"
+              >더보기</a
+            >
+          </div>
+          <div class="comments">
+            <a
+              href=""
+              style="color: rgb(78, 76, 76); font-size: 15px; margin-left: 10px"
+              >댓글 17개 모두 보기</a
+            >
+          </div>
+          <div class="comment">
+            <span>beauty1</span><span>"하와이 멋지다"</span>
+          </div>
+          <div class="day">
+            <span
+              style="color: rgb(78, 76, 76); font-size: 12px; margin-left: 10px"
+              >1일 전</span
+            >
+          </div>
+          <hr />
+          <div class="commentsBox">
+            <div class="commentsBox1">
+              <a href=""><img class="commentBox" src="img/emoticon.png" /></a>
+              <textarea
+                class="commentOpinion"
+                name="opinion"
+                placeholder="댓글 달기.."
+              ></textarea>
+            </div>
+            <div>
+              <input class="submitComment" type="submit" value="게시" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="aside">
+        <!--오른쪽 : 오른쪽 내용-->
+        <div class="myAnotherId">
+          <div class="myAnotherId1">
+            <img class="myAnotherIdIcon" src="img/mung4.jpg" />
+            <div class="myAnotherId2">
+              <span style="font-weight: bold; margin-left: 5px"
+                >love_mungchi</span
+              >
+              <span
+                style="
+                  color: rgb(78, 76, 76);
+                  font-size: 13px;
+                  margin-left: 5px;
+                "
+                >이성영</span
+              >
+            </div>
+          </div>
+          <div class="myAnotherId3">
+            <span class="follow"><a href="" onclick="changeId()">전환</a></span>
+          </div>
+        </div>
+
+        <div class="recommend">
+          <div class="recommend1">
+            <a href=""><span class="recom">회원님을 위한 추천</span></a>
+            <a href=""><img class="glasses" src=img/glasses.png></a>
+          </div>
+          <div class="recommend2">
+            <a href=""><span style="font-weight: bold">모두 보기</span></a>
+          </div>
+        </div>
+        <!--추천1-->
+        <div class="myAnotherId">
+          <div class="myAnotherId1">
+            <img class="recommendIdIcon" src="img/IU.jpeg" />
+            <div class="myAnotherId2">
+              <span style="font-weight: bold; margin-left: 5px">love_IU</span>
+              <span
+                style="
+                  color: rgb(78, 76, 76);
+                  font-size: 13px;
+                  margin-left: 5px;
+                "
+                >aloha123님이 팔로우합니다</span
+              >
+            </div>
+          </div>
+          <div class="myAnotherId3">
+            <span class="follow"><a href="">팔로우</a></span>
+          </div>
+        </div>
+        <!--추천2-->
+        <div class="myAnotherId">
+          <div class="myAnotherId1">
+            <img class="recommendIdIcon" src="img/yejin.jpeg" />
+            <div class="myAnotherId2">
+              <span style="font-weight: bold; margin-left: 5px"
+                >love_yejin</span
+              >
+              <span
+                style="
+                  color: rgb(78, 76, 76);
+                  font-size: 13px;
+                  margin-left: 5px;
+                "
+                >love_sy님이 팔로우합니다</span
+              >
+            </div>
+          </div>
+          <div class="myAnotherId3">
+            <span class="follow"><a href="">팔로우</a></span>
+          </div>
+        </div>
+        <!--추천3-->
+        <div class="myAnotherId">
+          <div class="myAnotherId1">
+            <img class="recommendIdIcon" src="img/hyego.jpeg" />
+            <div class="myAnotherId2">
+              <span style="font-weight: bold; margin-left: 5px"
+                >love_hyego</span
+              >
+              <span
+                style="
+                  color: rgb(78, 76, 76);
+                  font-size: 13px;
+                  margin-left: 5px;
+                "
+                >esy1107님이 팔로우합니다</span
+              >
+            </div>
+          </div>
+          <div class="myAnotherId3">
+            <span class="follow"><a href="">팔로우</a></span>
+          </div>
+        </div>
+        <!--추천4-->
+        <div class="myAnotherId">
+          <div class="myAnotherId1">
+            <img class="recommendIdIcon" src="img/cat1.jpg" />
+            <div class="myAnotherId2">
+              <span style="font-weight: bold; margin-left: 5px">love_cat</span>
+              <span
+                style="
+                  color: rgb(78, 76, 76);
+                  font-size: 13px;
+                  margin-left: 5px;
+                "
+                >qwerty님이 팔로우합니다</span
+              >
+            </div>
+          </div>
+          <div class="myAnotherId3">
+            <span class="follow"><a href="">팔로우</a></span>
+          </div>
+        </div>
+        <!--추천5-->
+        <div class="myAnotherId">
+          <div class="myAnotherId1">
+            <img class="recommendIdIcon" src="img/dog1.jpeg" />
+            <div class="myAnotherId2">
+              <span style="font-weight: bold; margin-left: 5px">love_dog</span>
+              <span
+                style="
+                  color: rgb(78, 76, 76);
+                  font-size: 13px;
+                  margin-left: 5px;
+                "
+                >beauty1님이 팔로우합니다</span
+              >
+            </div>
+          </div>
+          <div class="myAnotherId3">
+            <span class="follow"><a href="">팔로우</a></span>
+          </div>
+        </div>
+
+        <br /><br />
+        <!--마지막 파트-->
+        <div class="foot">
+          <div class="foot1">
+            <span
+              >소개·도움말·홍보센터·API·채용정보·개인정보처리방침·약관·위치·언어</span
+            >
+          </div>
+          <div class="foot2">
+            <span>@2023 INSTAGRAM FROM META</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <!--외부 자바스크립트-->
+    <script src="index.js"></script>
+  </body>
+</html>
