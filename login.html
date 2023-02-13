@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="logoPart">
+        <img src="img/instagramButton.png" class="logoPart1"></img>
+        <a href="login.html"><span class="logoPart2">Instagram</span></a>
+      </div>
+      <div class="loginPart">
+        <span class="loginPart1">Login</span>
+        <div class="loginPart2">
+          <div>
+            <input type="text" id="idBox" class="idpwBox" size="30" required placeholder="아이디(메일주소)" autocomplete="new-password">
+          </div>
+          <div>
+            <input type="password" id="pwBox" class="idpwBox" size="30" required placeholder="비밀번호" autocomplete="new-password">
+          </div>
+        </div>
+        <div class="loginSm">
+          <div>
+            <a href="index.html"><input type="submit" id="loginBox" value="로그인"></a>
+          </div>
+          <div class="joinPart">  
+            <img src="img/join.png" class="joinBox">
+            <a href="joinInstagram.html" target="_blank"><span class="join">인스타의 회원이 되어주세요!</span></a>
+          </div>       
+        </div>
+        <a href=""><span class="idpwForgot">아이디를 잊어버리셨습니까?</span></a>
+        <a href=""><span class="idpwForgot">비밀번호를 잊어버리셨습니까?</span></a>
+      </div>
+    </div>
+    
+
+    <!--외부 자바스크립트-->
+    <script src="login.js"></script>
+  </body>
+</html>

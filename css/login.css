@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Lobster&display=swap");
+* {
+  margin: 0; /* 마진 리셋 */
+  padding: 0; /* 패딩 리셋 */
+  font-family: "Do Hyeon", sans-serif;
+  text-decoration-line: none;
+  color: rgb(77, 76, 76);
+}
+
+.container {
+  background-color: rgb(235, 235, 235);
+  border-radius: 20px;
+  width: 500px;
+  height: 700px;
+  margin: 50px 600px;
+  border: solid 1px rgb(184, 183, 183);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logoPart {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.logoPart1 {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+}
+
+.logoPart2 {
+  display: inline-block; /* 블럭화 */
+  margin-top: 30px;
+  margin-left: 10px;
+  font-size: 45px;
+  font-family: "Lobster", "Do Hyeon", sans-serf;
+  color: rgb(96, 95, 95);
+}
+
+.loginPart {
+  background-color: white;
+  width: 400px;
+  height: 520px;
+  margin-top: 20px;
+  border: 1px solid white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.loginPart1 {
+  display: inline-block; /* 블럭화 */
+  margin-top: 10px;
+  font-size: 40px;
+  font-family: "Lobster", "Do Hyeon", sans-serf;
+  color: rgb(93, 93, 93);
+}
+
+/* input 창 */
+.loginPart2 {
+  width: 330px;
+  height: 110px;
+  margin-top: 20px;
+  background-color: rgb(241, 241, 241);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.idpwBox {
+  width: 300px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: none;
+}
+
+.idpwBox::placeholder {
+  font-size: 20px;
+  text-align: left;
+}
+
+.loginSm {
+  width: 330px;
+  height: 200px;
+  margin-top: 30px;
+  /* background-color: rgb(157, 60, 60); */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+
+#loginBox {
+  width: 330px;
+  height: 60px;
+  border-radius: 20px;
+  font-size: 30px;
+  color: white;
+  background-color: black;
+  font-weight: bold;
+  border: 3px solid white;
+}
+
+.joinPart {
+  /* background-color: rgb(79, 157, 60); */
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.join {
+  display: inline-block;
+  font-size: 16px;
+}
+
+.joinBox {
+  width: 20px;
+  height: 20px;
+}
+
+.idpwForgot {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+a > span:hover {
+  color: rgb(255, 193, 68);
+  cursor: pointer;
+}

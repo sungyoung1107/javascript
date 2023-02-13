@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="css/joinInstagram.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="logoPart">
+        <img src="img/instagramButton.png" class="logoPart1"></img>
+        <a href="login.html"><span class="logoPart2">Instagram</span></a><br>
+      </div>
+      <div class="loginPart">
+        <span class="loginPart1">친구들의 사진과 동영상을 보려면 가입하세요!</span>
+        <div class="loginPart2">
+          <input type="button" class="facebookButton" value="Facebook으로 로그인"><br>
+          <span class="or">또는</span>
+        </div>
+        
+        <div class="loginPart3">
+          <div class="chang">
+            <input type="text" id="idBox" class="idpwBox" required placeholder="아이디(메일주소)" autocomplete="new-password"> 
+            <input type="button" class="check" value="중복체크">
+          </div>
+          <div class="chang">
+            <input type="text" id="nameBox" class="idpwBox" required placeholder="성명" autocomplete="new-password">
+          </div>
+          <div class="chang">
+            <input type="text" id="userBox" class="idpwBox" required placeholder="사용자 이름" autocomplete="new-password">
+            <input type="button" class="check" value="중복체크">
+          </div>
+          <div class="chang">
+          <input type="password" id="pwBox" class="idpwBox" required placeholder="비밀번호" autocomplete="new-password">
+          </div>
+          <div>
+            <a href="index.html"><input type="submit" id="loginBox" value="가입"></a>
+          </div>   
+        </div>
+      </div>
+    </div>
+    
+
+    <!--외부 자바스크립트-->
+    <script src="login.js"></script>
+  </body>
+</html>

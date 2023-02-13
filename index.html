@@ -105,7 +105,7 @@
                       style="margin-top: 3px"
                     />
                     <a href="#desc" class="set_open">
-                      <span style="font-size: 18px"> 환경설정</span>
+                      <span class="descSet"> 모드설정</span>
                     </a>
                   </li>
                 </ul>
@@ -147,6 +147,7 @@
             <button class="arrowButton">&rang;</button>
           </div>
         </div>
+
         <div class="content2">
           <div class="userId">
             <div class="userId1">
@@ -160,7 +161,9 @@
           <div class="userPicture1">
             <!--환경설정 미니 화면-->
             <div id="desc">
-              <p style="text-align: center; font-size: 20px">모드 설정</p>
+              <p style="text-align: center; font-size: 20px; margin-top: 10px">
+                모드 설정
+              </p>
               <br />
               <div class="modeColor">
                 <label style="font-size: 18px">
@@ -186,6 +189,27 @@
                 <button class="set_close" type="button">닫기</button>
               </div>
             </div>
+
+            <!--공유하기 창-->
+            <div id="share">
+              <p style="text-align: center; font-size: 20px; margin-top: 10px">
+                공유하기
+              </p>
+              <br />
+              <div class="kakao">
+                <a href=""><img class="shareIcon" src="img/kakao.png" /></a>
+                <a href=""
+                  ><img class="shareIcon" src="img/instagramButton.png"
+                /></a>
+                <a href=""><img class="shareIcon" src="img/gmail.png" /></a>
+                <a href=""><img class="shareIcon" src="img/mesg.png" /></a>
+              </div>
+              <br />
+              <div>
+                <button class="set_close" type="button">닫기</button>
+              </div>
+            </div>
+
             <div id="image">
               <button class="arrowButton" id="prev">&lang;</button>
               <img src="img/img1.jpg" />
@@ -199,21 +223,23 @@
           <div class="good">
             <div class="good1">
               <a
-                ><img class="userIcon" id="love" src="img/alarmButton.png"
+                ><img class="userIcon1" id="love" src="img/alarmButton.png"
               /></a>
               <a href=""
-                ><img class="userIcon" src="img/commentButton.png"
+                ><img class="userIcon1" id="" src="img/commentButton.png"
               /></a>
-              <a href=""
-                ><img class="userIcon" src="img/messageButton.png"
+              <a href="#share" class="set_open"
+                ><img class="userIcon1" id="" src="img/messageButton.png"
               /></a>
             </div>
             <div class="good2">
-              <a href=""><img class="userIcon" src="img/scrabButton.png" /></a>
+              <a
+                ><img class="userIcon2" id="scrab" src="img/scrabButton.png"
+              /></a>
             </div>
           </div>
           <div class="goodCounts">
-            <span>좋아요</span><span>100</span><span>개</span>
+            <span>좋아요</span><span>0</span><span>개</span>
           </div>
           <div class="userWrightings">
             <span>ssungddu</span><span>"선셋 촬영, 멋진 노을과"</span>
@@ -250,7 +276,12 @@
               ></textarea>
             </div>
             <div>
-              <input class="submitComment" type="submit" value="게시" />
+              <input
+                class="submitComment"
+                type="submit"
+                value="게시"
+                style="background-color: none"
+              />
             </div>
           </div>
         </div>
@@ -276,7 +307,7 @@
             </div>
           </div>
           <div class="myAnotherId3">
-            <span class="follow"><a href="" onclick="changeId()">전환</a></span>
+            <span class="follow"><a href="">전환</a></span>
           </div>
         </div>
 
@@ -286,7 +317,7 @@
             <a href=""><img class="glasses" src=img/glasses.png></a>
           </div>
           <div class="recommend2">
-            <a href=""><span style="font-weight: bold">모두 보기</span></a>
+            <a href=""><span class="allSee">모두 보기</span></a>
           </div>
         </div>
         <!--추천1-->
